@@ -1,0 +1,158 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+	<title>reveal.js</title>
+
+	<link rel="stylesheet" href="dist/reset.css">
+	<link rel="stylesheet" href="dist/reveal.css">
+	<link rel="stylesheet" href="dist/theme/solarized.css">
+
+	<!-- Theme used for syntax highlighted code -->
+	<link rel="stylesheet" href="plugin/highlight/zenburn.css">
+</head>
+
+<body>
+	<div class="reveal">
+		<div class="slides">
+			<section>
+				<h1 style="color: blueviolet;">Tipos de archivos</h1>
+				<h3>y</h3>
+				<h2>los mas usados</h2>
+			</section>
+
+				<section>
+				<h3 style="color: blueviolet;">Archivos planos</h3>
+				<hr style="height:2px; width: 420px; background-color: blueviolet;">
+				<br>
+				<p>
+					Los tipos válidos para archivos planos son bool, byte, Int16, Int32, Int64, FixedDecimal, Float,
+					Double, String, V_String. Byte es un número no firmada entre 0-255, por lo que el tamaño del byte es
+					de 3 caracteres.
+				</p>
+				<img src="img/91-archivos-extensiones-programas-muestra.jpg" alt="" height="250px">
+			</section>
+
+
+			<section>
+				<h2 style="color: blueviolet;">xml</h2>
+				<hr style="width: 200px; background-color: blueviolet; height:2px;">
+				<h5>¿Que es?</h5>
+				<br>
+				<p>
+					El lenguaje de marcado extensible (XML) permite definir y almacenar
+					datos de forma compartible. XML admite el intercambio de información
+					entre sistemas de computación
+				</p>
+			</section>
+
+			<section>
+				<p>
+					Las reglas predefinidas facilitan la transmisión de datos como
+					archivos XML a través de cualquier red, ya que el destinatario
+					puede usar esas reglas para leer los datos de forma precisa y eficiente.
+					<br>
+					<hr style="background-color:blueviolet; height:2px;">
+					Las reglas predefinidas facilitan la transmisión de datos como
+					archivos XML a través de cualquier red, ya que el destinatario
+					puede usar esas reglas para leer los datos de forma precisa y eficiente.
+				</p>
+			</section>
+
+
+			<section>
+				<h3 style="color: blueviolet;">archivos json</h3>
+				<hr style="width: 400px; background-color: blueviolet; height:2px;">
+				<br>
+				<p>
+					JSON, que significa JavaScript Object Notation, es una formatación
+					usada para estructurar datos en forma de texto y transmitirlos
+					de un sistema a otro, como en aplicaciones cliente-servidor o en
+					aplicaciones móviles.
+				</p>
+			</section>
+
+
+			<section>
+				<p>
+					Una manera de emplearlo es a través de requisiciones AJAX, en
+					que la aplicación recupera los datos almacenados en el servidor
+					de hosting sin la necesidad de recargar la página.
+					<hr style="background-color:blueviolet; height:2px;">
+					La especificación del archivo JSON surgió alrededor del año 200,
+					pero solo pasó a formar parte del lenguaje JavaScript después
+					del lanzamiento de la versión 5 del ECMAScript.
+				</p>
+			</section>
+
+
+			<section>
+				<h3 style="color: blueviolet;">Archivo parquet</h3>
+				<hr style="width: 480px; background-color:blueviolet; height:2px;">
+				<br>
+				<P>
+					El formato parquet es un tipo de formato de los que
+					clasificamos en orientados-a-columnas (column-oriented
+					file format). Como habrás adivinado, existen otros formatos
+					orientados-a-filas o row-oriented. Tal es el caso de los
+					formatos tipo CSV, TSV o AVRO.
+				</P>
+			</section>
+
+			<section>
+				<p>
+					Para hablar de este tema, en este post os traemos una
+					reflexión acerca del formato de datos Apache Parquet o simplemente
+					Parquet. Las primeras versiones de Apache Parquet se
+					lanzaron en el año 2013. Desde 2015, Apache Parquet es uno
+					de los proyectos de cabecera patrocinados y mantenidos por Apache
+					Software Foundation (ASF).
+				</p>
+			</section>
+
+			<section>
+				<h2 style="color: blueviolet;">Archivos Yaml</h2>
+				<hr style="width: 500px; background-color:blueviolet; height:2px;">
+				<br>
+				<p>
+					YAML es un lenguaje de serialización de datos que suele utilizarse
+					en el diseño de archivos de configuración. Para algunas personas,
+					YAML significa otro lenguaje de marcado más; para otras, es un
+					acrónimo recursivo que quiere decir YAML no es un lenguaje de marcado,
+					lo que enfatiza la idea de que se utiliza para los datos, no para los documentos.
+				</p>
+			</section>
+
+			<section>
+				<p>
+					Estos son los tipos de archivos mas comunes y usados dentro del ambito de programacion
+					llegando a ser unos mas usador que otros y mas valorados por usar por su complejidad
+					o finalidad de uso.
+
+				</p>
+			</section>
+
+		</div>
+	</div>
+
+	<script src="dist/reveal.js"></script>
+	<script src="plugin/notes/notes.js"></script>
+	<script src="plugin/markdown/markdown.js"></script>
+	<script src="plugin/highlight/highlight.js"></script>
+	<script>
+		// More info about initialization & config:
+		// - https://revealjs.com/initialization/
+		// - https://revealjs.com/config/
+		Reveal.initialize({
+			hash: true,
+
+			// Learn about plugins: https://revealjs.com/plugins/
+			plugins: [RevealMarkdown, RevealHighlight, RevealNotes]
+		});
+	</script>
+</body>
+
+</html>

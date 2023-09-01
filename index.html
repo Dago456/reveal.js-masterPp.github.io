@@ -19,120 +19,230 @@
 	<div class="reveal">
 		<div class="slides">
 			<section>
-				<h1 style="color: blueviolet;">Tipos de archivos</h1>
-				<h3>y</h3>
-				<h2>los mas usados</h2>
+				<h2>Patrones de diseño de software</h2>
 			</section>
-
-				<section>
-				<h3 style="color: blueviolet;">Archivos planos</h3>
-				<hr style="height:2px; width: 420px; background-color: blueviolet;">
-				<br>
-				<p>
-					Los tipos válidos para archivos planos son bool, byte, Int16, Int32, Int64, FixedDecimal, Float,
-					Double, String, V_String. Byte es un número no firmada entre 0-255, por lo que el tamaño del byte es
-					de 3 caracteres.
-				</p>
-				<img src="img/91-archivos-extensiones-programas-muestra.jpg" alt="" height="250px">
-			</section>
-
-
 			<section>
-				<h2 style="color: blueviolet;">xml</h2>
-				<hr style="width: 200px; background-color: blueviolet; height:2px;">
-				<h5>¿Que es?</h5>
-				<br>
-				<p>
-					El lenguaje de marcado extensible (XML) permite definir y almacenar
-					datos de forma compartible. XML admite el intercambio de información
-					entre sistemas de computación
-				</p>
+				<h3>¿Que son?</h3>
+				<p>son una solución general, reutilizable y aplicable a diferentes problemas de diseño de software. Se
+					trata de plantillas que identifican problemas en el sistema y proporcionan soluciones apropiadas a
+					problemas generales a los que se han enfrentado los desarrolladores durante un largo periodo de
+					tiempo, a través de prueba y error.</p>
 			</section>
-
 			<section>
+				<p>Los patrones de diseño ayudan a los desarrolladores a comunicarse y compartir soluciones
+					eficientes y efectivas que han demostrado ser exitosas en el pasado.
+
+					Cada patrón de diseño tiene un propósito específico y ofrece una solución a un problema de diseño
+					común.
+					Al utilizar un patrón de diseño, los desarrolladores pueden aprovechar la experiencia acumulada y
+					evitar
+					reinventar la rueda, lo que resulta en un software más eficiente</p>
+			</section>
+			<section>
+				<H3>se dividen en </H3>
 				<p>
-					Las reglas predefinidas facilitan la transmisión de datos como
-					archivos XML a través de cualquier red, ya que el destinatario
-					puede usar esas reglas para leer los datos de forma precisa y eficiente.
-					<br>
-					<hr style="background-color:blueviolet; height:2px;">
-					Las reglas predefinidas facilitan la transmisión de datos como
-					archivos XML a través de cualquier red, ya que el destinatario
-					puede usar esas reglas para leer los datos de forma precisa y eficiente.
+					Los patrones de diseño más utilizados se clasifican en tres categorías principales, cada patrón de
+					diseño individual conforma un total de 23 patrones de diseño. Las cuatro categorías principales son:
+
+					Patrones creacionales
+					Patrones estructurales
+					Patrones de comportamiento
 				</p>
 			</section>
-
-
 			<section>
-				<h3 style="color: blueviolet;">archivos json</h3>
-				<hr style="width: 400px; background-color: blueviolet; height:2px;">
-				<br>
-				<p>
-					JSON, que significa JavaScript Object Notation, es una formatación
-					usada para estructurar datos en forma de texto y transmitirlos
-					de un sistema a otro, como en aplicaciones cliente-servidor o en
-					aplicaciones móviles.
-				</p>
+				<h3>patrones creacionales</h3>
+				<p>Los diseños de creación ofrecen una variedad de métodos para generar objetos, mejorando así la
+					versatilidad y la capacidad de volver a utilizar el código preexistente de una forma que sea
+					apropiada para la situación. Esto brinda al programa una mayor margen de maniobra para determinar
+					qué objetos deben generarse en una situación de uso particular.</p>
+				<h4>pero esto no es todo</h4>
 			</section>
-
-
 			<section>
-				<p>
-					Una manera de emplearlo es a través de requisiciones AJAX, en
-					que la aplicación recupera los datos almacenados en el servidor
-					de hosting sin la necesidad de recargar la página.
-					<hr style="background-color:blueviolet; height:2px;">
-					La especificación del archivo JSON surgió alrededor del año 200,
-					pero solo pasó a formar parte del lenguaje JavaScript después
-					del lanzamiento de la versión 5 del ECMAScript.
-				</p>
+				<h4>Tenemos subdiviciones </h4>
+				<h5>las cuales son:</h5>
+				<ul>
+					<li>Abstract Factory</li>
+					<li>Builder Patterns</li>
+					<li>Factory Method</li>
+					<li>Prototype</li>
+					<li>Singleton</li>
+				</ul>
 			</section>
-
-
 			<section>
-				<h3 style="color: blueviolet;">Archivo parquet</h3>
-				<hr style="width: 480px; background-color:blueviolet; height:2px;">
-				<br>
-				<P>
-					El formato parquet es un tipo de formato de los que
-					clasificamos en orientados-a-columnas (column-oriented
-					file format). Como habrás adivinado, existen otros formatos
-					orientados-a-filas o row-oriented. Tal es el caso de los
-					formatos tipo CSV, TSV o AVRO.
-				</P>
-			</section>
-
-			<section>
-				<p>
-					Para hablar de este tema, en este post os traemos una
-					reflexión acerca del formato de datos Apache Parquet o simplemente
-					Parquet. Las primeras versiones de Apache Parquet se
-					lanzaron en el año 2013. Desde 2015, Apache Parquet es uno
-					de los proyectos de cabecera patrocinados y mantenidos por Apache
-					Software Foundation (ASF).
+				<h3>Abstract Factory</h3>
+				<p>En esta pauta, una interfaz genera grupos o colecciones de objetos interrelacionados sin detallar el
+					nombre de la clase involucrada.
 				</p>
+				<h3>Builder Patterns</h3>
+				<p>Facilita la capacidad de generar diversas variantes y representaciones de un objeto mediante el
+					empleo de un conjunto uniforme de instrucciones de construcción. Este enfoque se emplea para
+					construir gradualmente un objeto complejo mediante la combinación de elementos más simples. La
+					creación final de los objetos se rige por las distintas etapas del proceso de creación, pero se
+					mantiene independiente de otros objetos en juego.</p>
+			</section>
+			<section>
+				<h3>Factory Method</h3>
+				<p>Ofrece una interfaz en una clase base para la creación de objetos, mientras que permite que las
+					subclases modifiquen el tipo de objetos a crear. Facilita la instanciación de objetos de manera
+					implícita a través de interfaces compartidas.</p>
+				<h3>Prototype</h3>
+				<p>Habilita la duplicación de objetos preexistentes sin necesidad de vincular su código a las clases
+					subyacentes. Se emplea para limitar las operaciones relacionadas con la memoria o la base de datos
+					al mínimo, logrando esto mediante copias de objetos.</p>
+			</section>
+			<section>
+				<h3>Singleton</h3>
+				<p>Este diseño de patrón limita la creación de instancias de una clase a una única entidad u objeto.</p>
+			</section>
+			// se hace un slide hacia abajo
+			<section>
+				<h3>¿pero esto es todo?</h3>
+				<p>no, ya que aun nos faltan dos patrones mas y sus propias subdivisiones</p>
+			</section>
+			<section>
+				<h3>Patrones estructurales</h3>
+				<p>Simplifican la creación de soluciones y normativas eficientes en relación con la composición de
+					clases y la organización de estructuras de objetos. La idea de herencia se emplea para combinar
+					interfaces y establecer métodos para estructurar objetos con el fin de obtener nuevas capacidades.
+				</p>
+				<h3>¿de que manera?</h3>
 			</section>
 
 			<section>
-				<h2 style="color: blueviolet;">Archivos Yaml</h2>
-				<hr style="width: 500px; background-color:blueviolet; height:2px;">
-				<br>
+				<h3>Adapter</h3>
+				<p>Se emplea para conectar dos interfaces que no son compatibles y aprovechar sus funcionalidades
+					conjuntamente. El adaptador posibilita que las clases colaboren de una manera que de otro modo sería
+					imposible debido a la incompatibilidad de las interfaces</p>
+				<h3>Bridge</h3>
+				<p>En este patrón, se produce una modificación en la estructura de las clases principales y de
+					implementación de la interfaz sin que esto tenga impacto alguno en su relación. Estas dos clases
+					pueden evolucionar de forma independiente y únicamente se conectan mediante una interfaz como
+					enlace.</p>
+			</section>
+			<section>
+				<h3>Composite</h3>
+				<p>Se emplea para agrupar objetos en una entidad única, lo que facilita la composición de objetos en
+					estructuras jerárquicas similares a un árbol. Luego, se pueden manipular estas estructuras como si
+					fueran objetos individuales.</p>
+				<h3>Decorator</h3>
 				<p>
-					YAML es un lenguaje de serialización de datos que suele utilizarse
-					en el diseño de archivos de configuración. Para algunas personas,
-					YAML significa otro lenguaje de marcado más; para otras, es un
-					acrónimo recursivo que quiere decir YAML no es un lenguaje de marcado,
-					lo que enfatiza la idea de que se utiliza para los datos, no para los documentos.
-				</p>
+					Este patrón limita las modificaciones en la estructura de un objeto al tiempo que agrega nuevas
+					funcionalidades. La clase original se mantiene sin cambios, mientras que una clase decoradora
+					proporciona capacidades adicionales.</p>
+			</section>
+			<section>
+				<h3>Facade</h3>
+				<p>Ofrece una interfaz simplificada para una biblioteca, un framework o cualquier otro conjunto complejo
+					de clases.</p>
+				<h3>Flyweight</h3>
+				<p>El patrón Flyweight se emplea con el propósito de minimizar el consumo de memoria y mejorar el
+					rendimiento al disminuir la creación de objetos. Este patrón identifica objetos similares que ya
+					existen y los reutiliza en lugar de crear nuevos objetos que sean similares.</p>
+			</section>
+			<section>
+				<h3>Proxy</h3>
+				<p>Este patrón se utiliza para crear objetos que pueden representar las funcionalidades de otras clases
+					u objetos, y se utiliza una interfaz para acceder a estas capacidades.</p>
+			</section>
+			<section>
+				<h2>¿Cual nos hace falta?</h2>
+			</section>
+			<section>
+				<h3>Patrones de comportamiento</h3>
+				<p>Los patrones de comportamiento se enfocan en la comunicación entre objetos de una clase. Se utilizan
+					para detectar la presencia de patrones de comunicación preexistentes y pueden modificar o mejorar
+					estos patrones. Estos patrones de diseño están estrechamente vinculados con la interacción y
+					comunicación entre objetos.</p>
+				<ul>
+					<li>Chain of responsibility</li>
+					<li>Command</li>
+					<li>Interpreter</li>
+					<li>Iterator</li>
+					<li>Mediator</li>
+					<li>Memento</li>
+					<li>Observer</li>
+					<li>State </li>
+					<li>Strategy</li>
+					<li>Template method</li>
+					<li>Visitor</li>
+				</ul>
+			</section>
+			<section>
+				<h3>Chain of responsibility</h3>
+				<p>Exactamente, has descrito con precisión el patrón de diseño Chain of Responsibility. Este patrón se
+					utiliza para evitar que un objeto emisor de una solicitud esté fuertemente acoplado a su receptor,
+					permitiendo que más de un objeto tenga la oportunidad de responder a la solicitud. Cada objeto en la
+					cadena (o cadena de responsabilidad) decide si puede manejar la solicitud o debe pasarla al
+					siguiente objeto en la cadena. Esto promueve la flexibilidad y la desvinculación en el diseño del
+					software al permitir que múltiples objetos procesen una solicitud sin necesidad de que el emisor
+					conozca los detalles de quién la manejará.</p>
+				<h3>Command</h3>
+				<p>La descripción que proporcionaste parece estar relacionada con el patrón Command (Comando). Este
+					patrón de diseño se utiliza para convertir una solicitud o acción en un objeto independiente que
+					contiene toda la información necesaria para realizar esa solicitud. Esto permite parametrizar
+					métodos con diferentes solicitudes, retrasar o encolar la ejecución de una solicitud, y respaldar
+					operaciones que pueden deshacerse. En resumen, el patrón Command encapsula una solicitud como un
+					objeto, lo que facilita su manipulación y gestión en un sistema.</p>
+			</section>
+			<section>
+				<h3>Interpreter</h3>
+				<p>La descripción que proporcionaste parece estar relacionada con el patrón Interpreter (Intérprete).
+					Este patrón se utiliza para evaluar expresiones o lenguajes específicos mediante la creación de una
+					estructura que interprete y ejecute las instrucciones dadas en el contexto proporcionado. El patrón
+					Interpreter se utiliza comúnmente en el diseño de lenguajes de programación, sistemas de
+					procesamiento de lenguaje natural y otras aplicaciones donde se necesita analizar y ejecutar
+					expresiones o instrucciones en un contexto específico.</p>
+				<h3>Iterator</h3>
+				<p>La descripción que proporcionaste parece ser relevante para el patrón Iterator (Iterador). Este
+					patrón se utiliza para proporcionar un acceso secuencial a los elementos de una colección sin
+					exponer su estructura interna. Permite recorrer los elementos de una colección uno por uno sin que
+					el código que realiza la iteración necesite conocer los detalles específicos de cómo se almacenan
+					esos elementos o cómo se accede a ellos. Esto facilita el acceso y la manipulación de elementos en
+					una colección sin tener que realizar intercambios de información relevante.</p>
+			</section>
+			<section>
+				<h3>Mediator</h3>
+				<p>El patrón Mediator (mediador) proporciona una comunicación centralizada entre varios objetos o
+					clases. En lugar de que los objetos se comuniquen directamente entre sí, utilizan un objeto mediador
+					que coordina y facilita la comunicación entre ellos. Esto simplifica la comunicación y reduce las
+					dependencias directas entre clases, lo que puede hacer que el sistema sea más flexible y fácil de
+					mantener.</p>
+				<h3>Memento</h3>
+				<p>El patrón Memento se utiliza para capturar el estado interno de un objeto sin exponer su estructura
+					interna. No está directamente relacionado con recorrer elementos de una colección, sino más bien con
+					la capacidad de guardar y restaurar el estado de un objeto en un momento dado. Puede ser utilizado
+					en situaciones donde se necesita guardar el estado de un objeto y luego restaurarlo sin conocer o
+					exponer su implementación interna.</p>
+			</section>
+			<section>
+				<h3>Observer</h3>
+				<p>Este patrón permite definir un mecanismo de suscripción para notificar a varios objetos sobre
+					cualquier evento que ocurra en el objeto que está siendo observado. En otras palabras, se utiliza
+					para establecer una relación de uno a muchos, donde un objeto (sujeto) mantiene una lista de sus
+					observadores y los notifica cuando su estado cambia.</p>
+				<h3>State</h3>
+				<p>En el patrón State, el comportamiento de una clase cambia según su estado interno, y este
+					comportamiento es representado por el objeto de contexto. El contexto utiliza un objeto estado que
+					encapsula el comportamiento específico relacionado con ese estado, permitiendo así que la clase se
+					comporte de manera diferente en función de su estado actual.</p>
+			</section>
+			<section>
+				<h3>Strategy</h3>
+				<p>Este patrón de diseño permite definir una familia de algoritmos, encapsular cada uno de ellos en una
+					clase separada y hacer que los objetos de estas clases sean intercambiables. Esto promueve la
+					flexibilidad y la posibilidad de cambiar el comportamiento de un objeto sin modificar su
+					estructura.FDF</p>
+				<h3>Template method</h3>
+				<p>Este patrón se utiliza en situaciones donde existen componentes con similitudes y es posible
+					implementar una plantilla de código para probar ambos componentes. Además, el código puede ser
+					adaptado con pequeñas modificaciones para adaptarse a cada componente en particular.</p>
 			</section>
 
 			<section>
-				<p>
-					Estos son los tipos de archivos mas comunes y usados dentro del ambito de programacion
-					llegando a ser unos mas usador que otros y mas valorados por usar por su complejidad
-					o finalidad de uso.
-
-				</p>
+				<h3>Visitor</h3>
+				<p>El propósito fundamental de un patrón Visitor es permitir la definición de una nueva operación en una
+					estructura de objetos existente sin necesidad de modificar esa estructura. Esto facilita la
+					extensión de funcionalidades sin alterar las clases de los objetos que componen esa estructura.</p>
 			</section>
 
 		</div>
